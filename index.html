@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">To Do List</h1>
+            <!-- New Task input box -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group m-3">
+                    <label for="inpTask">New Task</label>
+                    <input type="text" class="form-control" id="inpTask" aria-describedby="newTaskHelp" placeholder="Input New Task">
+                    <small id="newTaskHelp" class="form-text text-muted">Short one line description of the task.</small>
+                </div>
+            </div>
+                <!-- Buttons Row -->
+            <div class="col-md-4">
+                <div class="row">
+                    <button class="btn btn-success col-sm m-2" id="btnAdd" disabled>
+                        <i class="fa fa-plus-square"></i> Add 
+                    </button>
+                    <button class="btn btn-danger col-sm m-2" id="btnReset" disabled>
+                        <i class="fa fa-backspace"></i> Reset
+                    </button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-info col-sm m-2" id="btnSort" disabled>
+                        <i class="fas fa-sort-amount-up"></i> Sort 
+                    </button>
+                    <button class="btn btn-warning col-sm m-2" id="btnClear" disabled>
+                        <i class="fa fa-trash"></i> Cleanup
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- Task List -->
+        <ul class="list-group m-3" id="ulTask">
+            
+        </ul>
+    </div>
+
+</body>
+</html>
